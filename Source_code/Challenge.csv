@@ -1,0 +1,69 @@
+info,info,info,info,info,info,info,headers,headers,headers,headers,param,param,param,param,param,param,param,Expected_Response,Expected_Response
+TestID,TestScenario,testcase,Tag,Runflag,RequestMethod,url,Host,Content-Length,Content-Type,clientCode,username,password,clientCode,request,sessionLength,partnerKey,payload,Response_code,Content_Response
+Login_001,Verify login request with valid information,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":0"
+Login_002,Verify login request without username,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,,PosTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1050"
+Login_003,Verify login request without password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1050"
+Login_004,Verify login request without client code,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1009"
+Login_005,Verify login request without request,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1009"
+Login_006,Verify login request without session length,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":0"
+Login_007,Verify login request without partner key,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,86400,,,200,"""errorCode"":0"
+Login_008,Verify login request without username and password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,,,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1050"
+Login_009,Verify login request with wrong username,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignmentt,PosTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1051"
+Login_010,Verify login request with wrong password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,Postest!23,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1051"
+Login_011,Verify login request with wrong username and password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassign,PosTestAssign,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1051"
+Login_012,Verify login request with wrong client code,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,100000,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1003"
+Login_013,Verify login request with wrong request,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyPerson,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1009"
+Login_014,Verify login request with lesser session length,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,10000,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":0"
+Login_015,Verify login request with wrong partner key,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,86400,Ea13d039e42207d5a82ef77e90688168cd9b1fe1,,200,"""errorCode"":0"
+Login_016,Verify login request with upper case username,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,Testassignment,PosTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"“errorCode"":0"
+Login_017,Verify login request with upper case password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,POSTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1051"
+Login_018,Verify login request with upper case username and password,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/,104572.erply.com,162,application/x-www-form-urlencoded,,TESTASSIGNMENT,POSTESTASSIGNMENT123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,200,"""errorCode"":1051"
+Login_019,Verify login request with bad request,Postrequest,Response_code_200,1,POST,https://104572.erply.com/api/asd,104572.erply.com,162,application/x-www-form-urlencoded,,testassignment,PosTestAssignment123,104572,verifyUser,86400,ea13d039e42207d5a82ef77e90688168cd9b1fe0,,404,The requested URL was not found on this server
+Brand_001,Verify brand creation,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": ""Jagadeesh""
+}",200,"""id"": 73"
+Brand_002,Verify brand creation without brand name,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": """"
+}",403,add of brands is not permitted
+Brand_003,Verify brand creation without description,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""description"": {},
+  ""name"": ""Jagadeesh""
+}",403,add of brands is not permitted
+Brand_004,Verify brand creation without payload,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,{},403,add of brands is not permitted
+Brand_005,Verify brand creation with bad request,Postrequest,Response_code_200,1,POST,https://api-pim-eu11.erply.com/v1/brand/asd,,,application/json,104572,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": ""Jagadeesh""
+}",403,add of brands is not permitted
+Brand_006,Verify brand creation without clientcode,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": ""Jagadeesh""
+}",400,"account does not correspond to this endpoint, please do getServiceEndpoints ERPLY API call to fetch the correct endpoint for your account"
+Brand_007,Verify brand creation with wrong clientcode,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,100001,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": ""Jagadeesh""
+}",400,"account does not correspond to this endpoint, please do getServiceEndpoints ERPLY API call to fetch the correct endpoint for your account"
+Brand_008,Verify brand creation without brand name tag,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  }}",403,add of brands is not permitted
+Brand_009,Verify brand creation without brand description tag,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""name"": ""Jagadeesh""
+}",403,add of brands is not permitted
+Brand_010,Verify brand creation with  additional tag name,Postrequest,Response_code_200,1,POST,https://api-pim-eu10.erply.com/v1/brand,,,application/json,104572,,,,,,,"{
+  ""description"": {
+    ""en"": ""EN""
+  },
+  ""name"": ""Jagadeesh"", ""year"": ""2022""
+}",403,add of brands is not permitted

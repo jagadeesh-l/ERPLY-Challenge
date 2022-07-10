@@ -1,0 +1,23 @@
+Report:
+-------
+	1. Reports are generated in the xlsx file.
+	2. Passed cases are highlighted in the green colour.
+	3. Failed cases are highlighted in the red colour.
+
+	
+Validations Coverage:
+---------------------
+	1. Trigger api without token.
+	2. Trigger with wrong token.
+	3. Trigger with empty query string value.
+	4. Trigger with wrong query string value.
+	5. Trigger without mandatory field.
+	6. Trigger with non-mandatory field.
+	7. Trigger with invalid url.
+	8. Trigger with valid url.
+
+Results:
+--------
+
+	Please find the file "result_today_datetime.xlsx" for the result generated on the above scenarios.
+

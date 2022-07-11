@@ -88,4 +88,15 @@ Test and Create the scenarios based on the response on the fly.
 Reporting -> Allure or any interactive report
 
 
+Continuous Integration/ Continuous Deployment (CI/CD):
+________________________________________________________
+
+I have exposure only to Jenkins, so using Jenkins I will do continuous integration and Continuous deployment.
+How to do it?
+    * I will first set the job pipeline and schedule the job in following manner
+        1. Based on new branch merge request into master/release branch, I will trigger the API automation once new code
+           is merged.
+        2. After successful API automation run, based on result report (if all pass), we can move the code base to deployment. If result fails,
+           should abort the deployment(re-try can be done based on the investigation).
+
 

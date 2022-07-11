@@ -39,26 +39,12 @@ Report file is stored in the same folder where the script is present.
 File will be in the "result" + "current_date_time".xlsx format. Eg: (result20190130185639.xlsx)
 
 
-What are all Web-service covered?
----------------------------------
-
-
-post   /upload
-put    /upload
-get    /upload
-post   /files
-put    /files
-get    /files
-delete /files
-
 
 Define Implementation?
 ----------------------
 
 
 Have defined each method for post, put, get, delete, patch, head
-
-The form data is maintained as a dictionary and passed to POST and PUT uploads/files.
 
 
 Define each Classes and Methods used?
@@ -90,7 +76,7 @@ Classes:
 Scenarios coverage?
 -------------------
 
-	Please view the "report_info.txt" for the scenario coverage.
+Please view the "report_info.txt" for the scenario coverage.
 
 
 Enhancements:

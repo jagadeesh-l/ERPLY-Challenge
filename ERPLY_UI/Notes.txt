@@ -1,0 +1,3 @@
+Accessibility is not working -> like tab tab and enter product name and press enter key
+Search for a code and if two results are coming and if we press enter, only first one is getting selected.
+Searched items is added and incremented only sequentially

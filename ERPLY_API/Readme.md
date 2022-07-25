@@ -60,16 +60,16 @@ Classes:
 
 
 	2. Mapper     	- This will map the api request based on the request method.
-		  Methods   - 1. function_mapper    : It will map request methods.
+	      Methods   - 1. function_mapper    : It will map request methods.
 
 
 	3. verbs	- This will maintain all the request methods
-		  Methods   - 1. get    : Get the data and return.
-			      2. post   : Post the data and return.
-			      3. put    : Update the data if not, create and return.
-			      4. delete : Delete the data and return.
-			      5. patch  : update the particular date and return.
-			      6. head	: Get the header and return.
+	      Methods   - 1. get    : Get the data and return.
+			  2. post   : Post the data and return.
+			  3. put    : Update the data if not, create and return.
+			  4. delete : Delete the data and return.
+			  5. patch  : update the particular date and return.
+			  6. head	: Get the header and return.
 
 
 Scenarios coverage?

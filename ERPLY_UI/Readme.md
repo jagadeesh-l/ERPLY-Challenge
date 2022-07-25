@@ -47,7 +47,7 @@ Enhancements:
 Reporting -> Allure or any interactive report
 
 Bugs Found During Testing:
-___________________________
+---------------------------
 
 1. Accessibility is not working -> like tab tab and enter product name and press enter key.
 2. Search for a code and if two results are coming and if we press enter, only first one is getting selected.

@@ -1,4 +1,3 @@
-===============================================================================
  Web-service Testing - Validate all the possible scenarios by triggering APIs
 ===============================================================================
 
@@ -55,48 +54,48 @@ Classes:
 
 	1. WebService   - This class will form the data from the csv and it will trigger the APIs then generate the reports.
 	      Methods   - 1. convert_csv_to_list: It will convert the csv to list of dictionary.
-					  2. execute_testsuite  : It will execute the test suite by posting each test-case.
-					  3. generate_report    : It will assert the test-case and it will generate the report.
-					  4. result_sheet_format: It is used for cell formatting.
+			  2. execute_testsuite  : It will execute the test suite by posting each test-case.
+			  3. generate_report    : It will assert the test-case and it will generate the report.
+			  4. result_sheet_format: It is used for cell formatting.
 
 
-	2. Mapper       - This will map the api request based on the request method.
+	2. Mapper     	- This will map the api request based on the request method.
 		  Methods   - 1. function_mapper    : It will map request methods.
 
 
-	3. verbs		- This will maintain all the request methods
+	3. verbs	- This will maintain all the request methods
 		  Methods   - 1. get    : Get the data and return.
-					  2. post   : Post the data and return.
-					  3. put    : Update the data if not, create and return.
-					  4. delete : Delete the data and return.
-					  5. patch  : update the particular date and return.
-					  6. head	: Get the header and return.
+			      2. post   : Post the data and return.
+			      3. put    : Update the data if not, create and return.
+			      4. delete : Delete the data and return.
+			      5. patch  : update the particular date and return.
+			      6. head	: Get the header and return.
 
 
 Scenarios coverage?
 -------------------
 
-Please view the "report_info.txt" for the scenario coverage.
+1. Please view the "report_info.txt" for the scenario coverage.
 
 
 Enhancements:
 -------------
 
 
-Generate the tokens on the fly and verify the cases.
-Test and Create the scenarios based on the response on the fly.
-Reporting -> Allure or any interactive report
+1. Generate the tokens on the fly and verify the cases.
+2. Test and Create the scenarios based on the response on the fly.
+3. Reporting -> Allure or any interactive report
 
 
 Continuous Integration/ Continuous Deployment (CI/CD):
 ________________________________________________________
 
 I have exposure only to Jenkins, so using Jenkins I will do continuous integration and Continuous deployment.
-How to do it?
-    * I will first set the job pipeline and schedule the job in following manner
-        1. Based on new branch merge request into master/release branch, I will trigger the API automation once new code
+- How to do it?
+	- I will first set the job pipeline and schedule the job in following manner.
+	   - Based on new branch merge request into master/release branch, I will trigger the API automation once new code
            is merged.
-        2. After successful API automation run, based on result report (if all pass), we can move the code base to deployment. If result fails,
+	   - After successful API automation run, based on result report (if all pass), we can move the code base to deployment. If result fails,
            should abort the deployment(re-try can be done based on the investigation).
 
 
